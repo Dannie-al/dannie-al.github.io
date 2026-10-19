@@ -5,27 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dannie Almarales Saborit | Perfil profesional e investigaciones</title>
-
-  <meta name="description"
-        content="Perfil profesional e investigador de Dannie Almarales Saborit. Publicaciones e investigaciones sobre contabilidad, finanzas, gestión empresarial y otras áreas del conocimiento.">
-
+  <meta name="description" content="Perfil profesional e investigador de Dannie Almarales Saborit. Publicaciones e investigaciones sobre contabilidad, finanzas, gestión empresarial y otras áreas del conocimiento.">
   <meta name="author" content="Dannie Almarales Saborit">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="Spanish">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#10243a">
 
   <link rel="canonical" href="https://dannie-al.github.io/">
-  <link rel="alternate" hreflang="es"
-        href="https://dannie-al.github.io/">
+  <link rel="alternate" hreflang="es" href="https://dannie-al.github.io/">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title"
-        content="Dannie Almarales Saborit">
-  <meta property="og:description"
-        content="Perfil profesional, investigaciones y publicaciones.">
+  <meta property="og:title" content="Dannie Almarales Saborit">
+  <meta property="og:description" content="Perfil profesional, investigaciones y publicaciones.">
   <meta property="og:url" content="https://dannie-al.github.io/">
   <meta property="og:locale" content="es_UY">
-
-  <meta name="theme-color" content="#10243a">
 
   <script type="application/ld+json">
   {
@@ -58,10 +51,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "name": "LA ARMONIZACIÓN REGISTRAL CONTABLE EN URUGUAY:
-REFLEXIONES SOBRE LA CONVENIENCIA DE UN NOMENCLADOR
-NACIONAL DE CUENTAS A LA LUZ DE
-EXPERIENCIAS COMPARADAS",
+    "name": "LA ARMONIZACIÓN REGISTRAL CONTABLE EN URUGUAY: REFLEXIONES SOBRE LA CONVENIENCIA DE UN NOMENCLADOR NACIONAL DE CUENTAS A LA LUZ DE EXPERIENCIAS COMPARADAS",
     "author": {
       "@type": "Person",
       "name": "Dannie Almarales Saborit",
@@ -87,6 +77,7 @@ EXPERIENCIAS COMPARADAS",
       --muted: #637083;
       --white: #ffffff;
       --border: #dce3ec;
+      --focus: #ffbf47;
     }
 
     * {
@@ -112,6 +103,29 @@ EXPERIENCIAS COMPARADAS",
 
     a:hover {
       text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 10;
+      padding: 10px 14px;
+      color: var(--navy);
+      background: var(--white);
+      border: 2px solid var(--focus);
+      border-radius: 6px;
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
     }
 
     .header {
@@ -191,6 +205,7 @@ EXPERIENCIAS COMPARADAS",
     .button {
       display: inline-block;
       padding: 11px 18px;
+      border: 1px solid transparent;
       border-radius: 7px;
       background: var(--white);
       color: var(--navy);
@@ -200,7 +215,7 @@ EXPERIENCIAS COMPARADAS",
 
     .button.secondary {
       background: transparent;
-      border: 1px solid #9fb5cd;
+      border-color: #9fb5cd;
       color: var(--white);
     }
 
@@ -228,11 +243,12 @@ EXPERIENCIAS COMPARADAS",
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
       gap: 18px;
     }
 
     .card {
+      min-width: 0;
       background: var(--white);
       padding: 22px;
       border: 1px solid var(--border);
@@ -308,16 +324,21 @@ EXPERIENCIAS COMPARADAS",
         padding: 16px;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
   <header class="header">
     <nav class="nav" aria-label="Navegación principal">
-      <a class="brand" href="#inicio">
-        Dannie Almarales Saborit
-      </a>
+      <a class="brand" href="#inicio">Dannie Almarales Saborit</a>
 
       <div class="nav-links">
         <a href="#perfil">Perfil</a>
@@ -331,10 +352,7 @@ EXPERIENCIAS COMPARADAS",
 
   <div class="hero" id="inicio">
     <div class="hero-inner">
-      <div class="eyebrow">
-        Perfil profesional e investigaciones
-      </div>
-
+      <div class="eyebrow">Perfil profesional e investigaciones</div>
       <h1>Dannie Almarales Saborit</h1>
 
       <p>
@@ -345,21 +363,15 @@ EXPERIENCIAS COMPARADAS",
       </p>
 
       <div class="buttons">
-        <a class="button" href="#publicaciones">
-          Consultar publicaciones
-        </a>
-
-        <a class="button secondary" href="#perfil">
-          Conocer el perfil
-        </a>
+        <a class="button" href="#publicaciones">Consultar publicaciones</a>
+        <a class="button secondary" href="#perfil">Conocer el perfil</a>
       </div>
     </div>
   </div>
 
-  <main>
-
-    <section id="perfil">
-      <h2>Perfil</h2>
+  <main id="contenido">
+    <section id="perfil" aria-labelledby="titulo-perfil">
+      <h2 id="titulo-perfil">Perfil</h2>
 
       <div class="intro">
         <p>
@@ -383,25 +395,21 @@ EXPERIENCIAS COMPARADAS",
       </div>
     </section>
 
-    <section id="investigaciones">
-      <h2>Investigaciones</h2>
+    <section id="investigaciones" aria-labelledby="titulo-investigaciones">
+      <h2 id="titulo-investigaciones">Investigaciones</h2>
 
       <div class="grid">
-
         <article class="card">
           <h3>Armonización registral contable</h3>
-
           <p>
             Estudio de la armonización de los registros contables
             en Uruguay y de la conveniencia de analizar un
             nomenclador nacional de cuentas a la luz de experiencias
             comparadas.
           </p>
-
           <span class="tag">Contabilidad</span>
           <span class="tag">Regulación</span>
           <span class="tag">Uruguay</span>
-
           <p>
             <a href="https://doi.org/10.5281/zenodo.20582774">
               Consultar investigación original
@@ -411,93 +419,78 @@ EXPERIENCIAS COMPARADAS",
 
         <article class="card">
           <h3>Finanzas y análisis financiero</h3>
-
           <p>
             Espacio destinado a futuros estudios sobre análisis
             financiero, gestión del capital, evaluación económica
             y toma de decisiones empresariales.
           </p>
-
           <span class="tag">Finanzas</span>
           <span class="tag">Gestión</span>
-
-          <p class="small">
-            Se incorporarán trabajos cuando estén disponibles.
-          </p>
+          <p class="small">Se incorporarán trabajos cuando estén disponibles.</p>
         </article>
 
         <article class="card">
           <h3>Otras líneas de investigación</h3>
-
           <p>
             Sección abierta a investigaciones interdisciplinarias
             y estudios de otras áreas del conocimiento.
           </p>
-
           <span class="tag">Investigación</span>
           <span class="tag">Estudios comparados</span>
-
           <p class="small">
             Las nuevas líneas se identificarán según el contenido
             de cada trabajo.
           </p>
         </article>
-
       </div>
     </section>
 
-    <article class="card publication">
-  <p class="small">
-    DOCUMENTO DE TRABAJO · 2026
-  </p>
+    <section id="publicaciones" aria-labelledby="titulo-publicaciones">
+      <h2 id="titulo-publicaciones">Publicaciones</h2>
 
-  <h3>
-    <a
-      href="https://zenodo.org/records/20582774"
-      style="color: inherit; text-decoration: none;"
-    >
-      LA ARMONIZACIÓN REGISTRAL CONTABLE EN URUGUAY:
-      REFLEXIONES SOBRE LA CONVENIENCIA DE UN NOMENCLADOR
-      NACIONAL DE CUENTAS A LA LUZ DE EXPERIENCIAS COMPARADAS
-    </a>
-  </h3>
+      <article class="card publication">
+        <p class="small">DOCUMENTO DE TRABAJO · 2026</p>
 
-  <p>
-    <strong>Autor:</strong> Dannie Almarales Saborit.
-  </p>
+        <h3>
+          <a href="https://zenodo.org/records/20582774">
+            LA ARMONIZACIÓN REGISTRAL CONTABLE EN URUGUAY:
+            REFLEXIONES SOBRE LA CONVENIENCIA DE UN NOMENCLADOR
+            NACIONAL DE CUENTAS A LA LUZ DE EXPERIENCIAS COMPARADAS
+          </a>
+        </h3>
 
-  <p>
-    <strong>Repositorio:</strong> Zenodo.
-  </p>
+        <p><strong>Autor:</strong> Dannie Almarales Saborit.</p>
+        <p><strong>Repositorio:</strong> Zenodo.</p>
+        <p><strong>Fecha de publicación:</strong> 7 de junio de 2026.</p>
+        <p>
+          <strong>DOI:</strong>
+          <a href="https://doi.org/10.5281/zenodo.20582774">
+            10.5281/zenodo.20582774
+          </a>
+        </p>
 
-  <p>
-    <strong>Fecha de publicación:</strong> 7 de junio de 2026.
-  </p>
+        <p>
+          El trabajo examina la armonización registral contable
+          como dimensión de la regulación contable y compara
+          experiencias de Uruguay, España, Portugal, Francia y Cuba.
+          Plantea la necesidad de profundizar la investigación
+          empírica sobre la conveniencia de un nomenclador nacional
+          de cuentas en Uruguay, sin defender de antemano un modelo
+          único.
+        </p>
 
-  <p>
-    <strong>DOI:</strong>
-    <a href="https://doi.org/10.5281/zenodo.20582774">
-      10.5281/zenodo.20582774
-    </a>
-  </p>
+        <p>
+          <a href="https://zenodo.org/records/20582774">
+            Ver registro bibliográfico en Zenodo
+          </a>
+        </p>
+      </article>
+    </section>
 
-  <p>
-    El trabajo examina la armonización registral contable
-    como dimensión de la regulación contable y compara
-    experiencias de Uruguay, España, Portugal, Francia y Cuba.
-    Plantea la necesidad de profundizar la investigación
-    empírica sobre la conveniencia de un nomenclador nacional
-    de cuentas en Uruguay, sin defender de antemano un modelo
-    único.
-  </p>
+    <section id="intereses" aria-labelledby="titulo-intereses">
+      <h2 id="titulo-intereses">Áreas de interés</h2>
 
-  <p>
-    <a href="https://zenodo.org/records/20582774">
-      Ver registro bibliográfico en Zenodo
-    </a>
-  </p>
-    </article>
-
+      <div class="grid">
         <article class="card">
           <h3>Finanzas y gestión empresarial</h3>
           <p>
@@ -522,12 +515,11 @@ EXPERIENCIAS COMPARADAS",
             con su temática.
           </p>
         </article>
-
       </div>
     </section>
 
-    <section id="contacto">
-      <h2>Perfiles y fuentes académicas</h2>
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Perfiles y fuentes académicas</h2>
 
       <p>
         Consulta los siguientes perfiles y registros públicos
@@ -535,39 +527,18 @@ EXPERIENCIAS COMPARADAS",
       </p>
 
       <div class="profile-links">
-        <a href="https://orcid.org/0009-0008-0890-1942">
-          ORCID
-        </a>
-
-        <a href="https://openalex.org/authors/A5138097201">
-          OpenAlex
-        </a>
-
-        <a href="https://www.linkedin.com/in/danniealmarales/">
-          LinkedIn
-        </a>
-
-        <a href="https://zenodo.org/records/20582774">
-          Zenodo
-        </a>
+        <a href="https://orcid.org/0009-0008-0890-1942">ORCID</a>
+        <a href="https://openalex.org/authors/A5138097201">OpenAlex</a>
+        <a href="https://www.linkedin.com/in/danniealmarales/">LinkedIn</a>
+        <a href="https://zenodo.org/records/20582774">Zenodo</a>
       </div>
     </section>
-
   </main>
 
   <footer>
-    <p>
-      Dannie Almarales Saborit
-    </p>
-
-    <p>
-      Perfil profesional, investigaciones y publicaciones.
-    </p>
-
-    <p>
-      <a href="#inicio">Volver al inicio</a>
-    </p>
+    <p>Dannie Almarales Saborit</p>
+    <p>Perfil profesional, investigaciones y publicaciones.</p>
+    <p><a href="#inicio">Volver al inicio</a></p>
   </footer>
-
 </body>
-  </html>
+</html>
